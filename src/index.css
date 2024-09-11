@@ -25,3 +25,22 @@ code {
   box-shadow: 0px -10px 15px 10px rgba(0, 0, 0, 0.6);
   bottom: 12px;
 }
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
+.card-overlay-wrapper {
+  transition: all 0.5s ease;
+}
+
+.card-overlay-wrapper:hover .card-overlay-wrapper > .card-text-wrapper > p {
+  transform: scale(1.4);
+}
