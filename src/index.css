@@ -14,3 +14,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.marquee-wrapper:before {
+  z-index: 1;
+  border-radius: 25px 25px 0 0;
+  box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.6);
+}
+.marquee-wrapper:after {
+  z-index: 1;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0px -10px 15px 10px rgba(0, 0, 0, 0.6);
+  bottom: 12px;
+}
