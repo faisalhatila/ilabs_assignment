@@ -3,6 +3,10 @@ import './App.css';
 import Hero from './sections/Hero';
 import ClientMarquee from './components/ClientMarquee';
 import ExploreMarketPlace from './components/ExploreMarketPlace';
+import Efficiency from './components/Efficiency';
+import LatestTechnology from './components/LatestTechnology';
+import NoHassle from './components/NoHassle';
+import Footer from './components/Footer';
 
 function App() {
   const clientMarque = [
@@ -21,6 +25,10 @@ function App() {
       <Hero />
       <ClientMarquee logos={clientMarque} />
       <ExploreMarketPlace />
+      <Efficiency />
+      <LatestTechnology />
+      <NoHassle />
+      <Footer />
     </>
   );
 }
