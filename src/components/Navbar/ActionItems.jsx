@@ -19,7 +19,7 @@ const ActionItems = () => {
   }, []);
   return (
     <>
-      <div className="flex items-center cursor-pointer">
+      <div className="hidden md:flex items-center cursor-pointer">
         <div
           className="border-2 rounded-[50%] border-white w-[50px] h-[50px] flex items-center justify-center relative"
           ref={dropdownRef}
