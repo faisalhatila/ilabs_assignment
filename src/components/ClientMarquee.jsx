@@ -18,9 +18,9 @@ const ClientMarquee = ({ logos }) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <div className={`flex space-x-8 ${isPaused ? '' : 'animate-marquee'}`}>
+      <div className={`flex space-x-8 `}>
         {/* Repeat the logos twice to create a continuous loop */}
-        {logos.map((logo, idx) => (
+        {/* {logos.map((logo, idx) => (
           <div key={idx} className="w-32 h-32 flex-shrink-0">
             <img
               src={logo}
@@ -28,18 +28,18 @@ const ClientMarquee = ({ logos }) => {
               className="max-w-[50%] object-contain filter grayscale h-[80px]"
             />
           </div>
-        ))}
-        {/* <Marquee className="flex" pauseOnHover={true}>
+        ))} */}
+        <Marquee className="flex w-[100%]" pauseOnHover={true} speed={300}>
           {logos.map((logo, idx) => (
-            <div key={idx} className="flex-1 w-32 h-32 flex-shrink-0">
+            <div key={idx} className="flex-1 flex-shrink-0 mr-[150px]">
               <img
                 src={logo}
                 alt={`client logo ${idx}`}
-                className="max-w-[50%] object-contain filter grayscale h-[80px]"
+                className="max-w-[90px] object-contain filter grayscale h-[80px]"
               />
             </div>
           ))}
-        </Marquee> */}
+        </Marquee>
       </div>
     </div>
   );

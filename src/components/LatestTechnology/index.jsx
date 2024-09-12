@@ -27,7 +27,7 @@ const DashboardGrid = () => {
   ];
 
   return (
-    <div className="px-[20px] sm:px-[40px] md:px-[10%] bg-[#EDF7FA] py-[112px]">
+    <div className="hidden md:block px-[20px] sm:px-[40px] md:px-[10%] bg-[#EDF7FA] py-[112px]">
       <div className="mb-[80px]">
         <p className="text-[#64748B] text-[18px] font-[400] leading-[24px]">
           Our Stocks

@@ -65,9 +65,9 @@ const Hero = () => {
   return (
     <div className="bg-dark h-screen flex flex-col">
       <NavBar />
-      <div className="px-[20px] sm:px-[40px] md:px-[10%] flex items-center flex-1">
+      <div className="px-[20px] sm:px-[40px] md:px-[10%] flex justify-center md:justify-start flex-col md:flex-row items-center flex-1">
         <HeroContent />
-        <div className="marquee-wrapper z-10 flex-1 h-[80%] flex gap-[10px] relative before:content-[''] before:absolute before:w-[100%] before:h-[50px] before:bg-[rgba(0,0,0,0.6)] after:content-[''] after:absolute after:w-[100%] after:h-[50px] after:bg-[rgba(0,0,0,0.6)]">
+        <div className="marquee-wrapper z-10 flex-1 h-[80%] hidden md:flex gap-[10px] relative before:content-[''] before:absolute before:w-[100%] before:h-[50px] before:bg-[rgba(0,0,0,0.6)] after:content-[''] after:absolute after:w-[100%] after:h-[50px] after:bg-[rgba(0,0,0,0.6)]">
           {marqueeList.map(({ id, list }) => (
             <Maqruee list={list} key={id} />
           ))}

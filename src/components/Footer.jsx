@@ -33,8 +33,8 @@ const Footer = () => {
   return (
     <>
       <div className="px-[20px] sm:px-[40px] md:px-[10%]">
-        <div className="flex justify-between">
-          <div className="flex flex-col gap-[14px]">
+        <div className="flex flex-col md:flex-row justify-between">
+          <div className="flex flex-col gap-[14px] mb-[50px] md:mb-0">
             <img
               src="/assets/images/i-labs-logo.svg"
               className="max-w-[83px]"
@@ -62,7 +62,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-[17px]">
+          <div className="flex flex-col gap-[17px] mb-[50px] md:mb-0">
             <p className="text-dark text-[18px] font-[600] leading-[24px]">
               Offices
             </p>
@@ -77,7 +77,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col gap-[17px]">
             <p className="text-dark text-[18px] font-[600] leading-[24px]">
-              Offices
+              Services
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[86px] gap-y-[17px]">
               {services.map((item, index) => (

@@ -11,10 +11,16 @@ const Card = ({ title, image }) => {
       {/* Overlay */}
       <div className="card-overlay-wrapper absolute inset-0 bg-[rgba(36,154,202,0.7)] z-0">
         {/* Title with overlay */}
-        <div className="card-text-wrapper absolute inset-0 z-10">
-          <p className="text-white font-semibold text-[20px] bg-black bg-opacity-50 p-2 rounded w-fit">
+        <div className="card-text-wrapper absolute left-[22px] top-[22px] inset-0 z-10">
+          <p className="text-white font-[600] leading-[25px] text-[20px] bg-black bg-opacity-50 p-2 rounded w-fit">
             {title}
           </p>
+        </div>
+        <div className="absolute card-footer-text-wrapper bottom-[26px] right-[20px] flex items-center gap-[13px]">
+          <p className="text-white text-[14px] font-[400] leading-[24px]">
+            Explore{' '}
+          </p>
+          <img src="/assets/images/explore-arrow.svg" />
         </div>
       </div>
     </div>

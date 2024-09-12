@@ -17,14 +17,14 @@ const NoHassle = () => {
   ];
   return (
     <div className="px-[20px] sm:px-[40px] md:px-[10%] py-[112px]">
-      <div className="bg-dark rounded-[16px] px-[55px] py-[30px]  flex justify-between items-center">
-        <div className="flex flex-col gap-[30px]">
-          <p className="text-[40px] text-white w-[424px] leading-[50px] font-[600]">
+      <div className="bg-dark rounded-[16px] px-[55px] py-[30px] flex-col md:flex-row flex justify-between items-center">
+        <div className="flex flex-col items-center md:items-start gap-[30px]">
+          <p className="text-[40px] text-white md:w-[424px] leading-[50px] font-[600]">
             The no hassle way to get job done.
           </p>
-          <div className="flex items-center gap-[60px]">
+          <div className="flex flex-col md:flex-row items-center gap-[60px]">
             {companyInfoNums.map(({ title, text }, index) => (
-              <div className="flex flex-col items gap-[5px]" key={index}>
+              <div className="flex flex-col items-center gap-[5px]" key={index}>
                 <p className="text-[35px] text-white leading-[35px] font-[600]">
                   {title}
                 </p>
@@ -34,7 +34,7 @@ const NoHassle = () => {
               </div>
             ))}
           </div>
-          <button className="w-[234px] py-[15px] bg-primary border-2 border-primary rounded-[40px] text-white">
+          <button className="w-[234px] mb-[50px] md:mb-0 py-[15px] bg-primary border-2 border-primary rounded-[40px] text-white">
             Create an Account
           </button>
         </div>

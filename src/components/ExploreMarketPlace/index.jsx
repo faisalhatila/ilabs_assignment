@@ -52,11 +52,11 @@ const ExploreMarketPlace = () => {
   ];
   return (
     <div className="px-[20px] sm:px-[40px] md:px-[10%]">
-      <div className="flex justify-between">
+      <div className="flex flex-col md:flex-row justify-between">
         <p className="text-[33px] leading-[45px] font-[600]">
           Explore the marketplace.
         </p>
-        <button className="border-[1px] py-[14px] px-[33px] border-dark bg-white h-[33px] rounded-[44px] text-center text-[14px] font-[500] leading-[18px] flex items-center">
+        <button className="mt-[10px] md:mt-[0px] border-[1px] py-[14px] px-[33px] border-dark bg-white h-[33px] rounded-[44px] text-center text-[14px] font-[500] leading-[18px] flex items-center justify-center">
           View all services
         </button>
       </div>

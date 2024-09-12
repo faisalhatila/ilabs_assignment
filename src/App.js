@@ -7,6 +7,8 @@ import Efficiency from './components/Efficiency';
 import LatestTechnology from './components/LatestTechnology';
 import NoHassle from './components/NoHassle';
 import Footer from './components/Footer';
+import ExcelledIndustries from './components/ExcelledIndustries';
+import ReviewsAboutUs from './components/ReviewsAboutUs';
 
 function App() {
   const clientMarque = [
@@ -27,6 +29,8 @@ function App() {
       <ExploreMarketPlace />
       <Efficiency />
       <LatestTechnology />
+      <ExcelledIndustries />
+      <ReviewsAboutUs />
       <NoHassle />
       <Footer />
     </>

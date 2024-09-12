@@ -41,6 +41,36 @@ code {
   transition: all 0.5s ease;
 }
 
-.card-overlay-wrapper:hover .card-overlay-wrapper > .card-text-wrapper > p {
-  transform: scale(1.4);
+.card-overlay-wrapper .card-text-wrapper p {
+  font-size: 20px; /* Initial font size */
+  transition: font-size 0.3s ease; /* Apply transition for smooth change */
+}
+
+.card-overlay-wrapper:hover .card-text-wrapper p {
+  font-size: 24px; /* Increased font size on hover */
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card-overlay-wrapper:hover .card-footer-text-wrapper {
+  animation: blink 0.5s; /* Blink animation on hover */
+}
+.marquee-item-overlay p {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.marquee-item-overlay:hover p {
+  opacity: 1;
+  visibility: visible;
 }

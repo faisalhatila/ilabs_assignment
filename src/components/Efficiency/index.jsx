@@ -32,7 +32,7 @@ const Efficiency = () => {
           Invite team members to collaborate, track, and manage orders with you.
         </p>
       </div>
-      <div className="flex gap-[112px] items-center">
+      <div className="flex flex-col md:flex-row gap-[0px] md:gap-[112px] items-center">
         <div className="my-[65px]">
           <img src="/assets/images/efficiency-dashboard.png" />
         </div>
@@ -54,7 +54,7 @@ const Efficiency = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center mt-[50px] md:mt-[0px]">
         <button className="boder-2 border-primary bg-primary text-white flex justify-center items-center py-[20px] px-[40px] rounded-[40px]">
           Create An Account
         </button>
