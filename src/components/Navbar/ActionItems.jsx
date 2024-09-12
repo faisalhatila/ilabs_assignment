@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
-const ActionItems = () => {
+const ActionItems = ({ selectedLanguage, changeLanguage, languages }) => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
   const handleAvatarClick = () => {
@@ -17,6 +18,7 @@ const ActionItems = () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
+  const { t } = useTranslation();
   return (
     <>
       <div className="hidden md:flex items-center cursor-pointer">
@@ -25,7 +27,7 @@ const ActionItems = () => {
           ref={dropdownRef}
           onClick={handleAvatarClick}
         >
-          <p className="text-white">EN</p>
+          <p className="text-white uppercase">{selectedLanguage}</p>
           <div
             style={{
               zIndex: 100,
@@ -37,26 +39,23 @@ const ActionItems = () => {
             }`}
           >
             <ul>
-              <li
-                onClick={() => console.log('Profile')}
-                className="px-4 py-2 bg-darkprimary text-dark hover:bg-white hover:text-darkprimary cursor-pointer"
-              >
-                English
-              </li>
-              <li
-                onClick={() => console.log('Settings')}
-                className="px-4 py-2 bg-darkprimary text-dark hover:bg-white hover:text-darkprimary cursor-pointer"
-              >
-                Spanish
-              </li>
+              {languages.map(({ value, fullForm }, index) => (
+                <li
+                  key={index}
+                  onClick={() => changeLanguage(value)}
+                  className="px-4 py-2 bg-darkprimary text-dark hover:bg-white hover:text-darkprimary cursor-pointer"
+                >
+                  {fullForm}
+                </li>
+              ))}
             </ul>
           </div>
         </div>
-        <div className="border-2 mx-5 rounded-[25px] border-white px-3 w-[120px] h-[50px] flex items-center justify-center">
-          <p className="text-white">Login</p>
+        <div className="border-2 mx-5 rounded-[25px] border-white px-3 min-w-[120px] h-[50px] flex items-center justify-center">
+          <p className="text-white">{t('button.login')}</p>
         </div>
         <div className="bg-primary border-2 rounded-[25px] border-primary px-3 w-[180px] h-[50px] flex items-center justify-center">
-          <p className="text-white">Create Account</p>
+          <p className="text-white">{t('button.create-account')}</p>
         </div>
       </div>
     </>

@@ -1,6 +1,8 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Card = ({ title, image }) => {
+  const { t } = useTranslation();
   return (
     <div className="relative group overflow-hidden rounded-[16px] h-[362px] w-full">
       {/* Background image */}
@@ -13,12 +15,12 @@ const Card = ({ title, image }) => {
         {/* Title with overlay */}
         <div className="card-text-wrapper absolute left-[22px] top-[22px] inset-0 z-10">
           <p className="text-white font-[600] leading-[25px] text-[20px] bg-black bg-opacity-50 p-2 rounded w-fit">
-            {title}
+            {t(title)}
           </p>
         </div>
         <div className="absolute card-footer-text-wrapper bottom-[26px] right-[20px] flex items-center gap-[13px]">
           <p className="text-white text-[14px] font-[400] leading-[24px]">
-            Explore{' '}
+            {t('market-place.services.explore')}
           </p>
           <img src="/assets/images/explore-arrow.svg" />
         </div>

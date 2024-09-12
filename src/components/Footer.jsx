@@ -1,6 +1,8 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
   const contactInfo = [
     {
       img: '/assets/images/e-mail-icon.svg',
@@ -17,18 +19,18 @@ const Footer = () => {
   ];
 
   const services = [
-    'Mobile App Development',
-    'Staff Augmentation',
-    'iOS Development',
-    'UX & UI Design',
-    'Android Development',
-    'Technical Writer',
-    'Web App Development',
-    'DevOps',
-    'Blockchain',
-    'Logo Design',
-    'Artificial Intelligence',
-    'Brand Book',
+    'service-1',
+    'service-2',
+    'service-3',
+    'service-4',
+    'service-5',
+    'service-6',
+    'service-7',
+    'service-8',
+    'service-9',
+    'service-10',
+    'service-11',
+    'service-12',
   ];
   return (
     <>
@@ -54,34 +56,36 @@ const Footer = () => {
                   #ilabsapp
                 </p>
                 <p className="text-white text-[12px] leading-[18px] font-[600] w-[182px]">
-                  Use this hashtag to win 5000€ development credits at i labs
+                  {t('footer.card.message')}
                 </p>
                 <button className="bg-primary border-2 border-primary text-white text-[12px] leading-[18px] font-[600] px-[18px] py-[5px] rounded-[18px] w-[165px]">
-                  Visit our socials
+                  {t('button.visit-our-socials')}
                 </button>
               </div>
             </div>
           </div>
           <div className="flex flex-col gap-[17px] mb-[50px] md:mb-0">
             <p className="text-dark text-[18px] font-[600] leading-[24px]">
-              Offices
+              {t('footer.offices.title')}
             </p>
-            {['Madrid', 'Dubai', 'London', 'New York'].map((item, index) => (
-              <p
-                className="text-dark text-[14px] font-[400] leading-[24px]"
-                key={index}
-              >
-                {item}
-              </p>
-            ))}
+            {['location-1', 'location-2', 'location-3', 'location-4'].map(
+              (item, index) => (
+                <p
+                  className="text-dark text-[14px] font-[400] leading-[24px]"
+                  key={index}
+                >
+                  {t(`footer.offices.${item}`)}
+                </p>
+              )
+            )}
           </div>
           <div className="flex flex-col gap-[17px]">
             <p className="text-dark text-[18px] font-[600] leading-[24px]">
-              Services
+              {t('footer.services.title')}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[86px] gap-y-[17px]">
               {services.map((item, index) => (
-                <p key={index}>{item}</p>
+                <p key={index}>{t(`footer.services.${item}`)}</p>
               ))}
             </div>
           </div>
@@ -89,7 +93,7 @@ const Footer = () => {
       </div>
       <div className="bg-dark px-[20px] sm:px-[40px] md:px-[10%] flex items-center justify-between mt-[30px] py-[17px]">
         <p className="text-[#939393] text-[12px] font-[400] leading-[18px]">
-          &copy; {new Date().getFullYear()} I-Labs.app All rights reserved
+          &copy; {new Date().getFullYear()} {t('footer.rights')}
         </p>
         <div className="flex items-center gap-[16px]">
           {['facebook', 'insta', 'linked-in', 'twitter', 'youtube'].map(
@@ -100,10 +104,10 @@ const Footer = () => {
         </div>
         <div className="flex items-center gap-[23px]">
           <p className="text-white text-[12px] font-[400] leading-[18px]">
-            Terms of Service
+            {t('footer.terms')}
           </p>
           <p className="text-white text-[12px] font-[400] leading-[18px]">
-            Privacy Policy
+            {t('footer.privacy-policy')}
           </p>
         </div>
       </div>

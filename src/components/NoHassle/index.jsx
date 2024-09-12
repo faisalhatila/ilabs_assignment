@@ -1,18 +1,20 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const NoHassle = () => {
+  const { t } = useTranslation();
   const companyInfoNums = [
     {
       title: '2019',
-      text: 'Founded in',
+      text: 'no-hassle.items.text-1',
     },
     {
       title: '400+',
-      text: 'Customers',
+      text: 'no-hassle.items.text-2',
     },
     {
       title: '5+',
-      text: 'Services Offered',
+      text: 'no-hassle.items.text-3',
     },
   ];
   return (
@@ -20,7 +22,7 @@ const NoHassle = () => {
       <div className="bg-dark rounded-[16px] px-[55px] py-[30px] flex-col md:flex-row flex justify-between items-center">
         <div className="flex flex-col items-center md:items-start gap-[30px]">
           <p className="text-[40px] text-white md:w-[424px] leading-[50px] font-[600]">
-            The no hassle way to get job done.
+            {t('no-hassle.title')}
           </p>
           <div className="flex flex-col md:flex-row items-center gap-[60px]">
             {companyInfoNums.map(({ title, text }, index) => (
@@ -29,7 +31,7 @@ const NoHassle = () => {
                   {title}
                 </p>
                 <p className="text-[16px] text-[#939393] leading-[24px] font-[400]">
-                  {text}
+                  {t(text)}
                 </p>
               </div>
             ))}

@@ -4,8 +4,11 @@ import Logo from './Logo';
 import NavItems from './NavItems';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoClose } from 'react-icons/io5';
+import { useTranslation } from 'react-i18next';
+import i18n from '../../il8n';
 
 const NavBar = () => {
+  const { t, i18n } = useTranslation();
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isOpenMobMenu, setisOpenMobMenu] = useState(false);
   const dropdownRef = useRef(null);
@@ -30,11 +33,38 @@ const NavBar = () => {
     setisOpenMobMenu((prev) => !prev);
   };
 
+  const languages = [
+    {
+      value: 'en',
+      fullForm: 'English',
+    },
+    {
+      value: 'es',
+      fullForm: 'Spanish',
+    },
+  ];
+  const [selectedLanguage, setSelectedLanguage] = useState(null);
+  useEffect(() => {
+    setSelectedLanguage(i18n.language);
+    localStorage.setItem('selectedLanguage', i18n.language);
+  }, []);
+
+  const handleChangeLanguage = (lang) => {
+    console.log({ lang, i18n });
+    setSelectedLanguage(lang);
+    localStorage.setItem('selectedLanguage', lang);
+    i18n.changeLanguage(lang);
+  };
+
   return (
     <div className="flex px-[20px] sm:px-[40px] md:px-[10%] py-[20px] justify-between items-center">
       <Logo />
       <NavItems />
-      <ActionItems />
+      <ActionItems
+        changeLanguage={handleChangeLanguage}
+        languages={languages}
+        selectedLanguage={selectedLanguage}
+      />
 
       {/* Mobile Menu */}
       <div
@@ -52,10 +82,10 @@ const NavBar = () => {
 
         <div className="flex flex-col mt-[50px]">
           <p className="text-[26px] text-white font-[500] leading-normal">
-            Our Services
+            {t('nav.item-1')}
           </p>
           <p className="text-[26px] text-white font-[500] leading-normal">
-            Contact Us
+            {t('nav.item-2')}
           </p>
         </div>
 
@@ -66,7 +96,7 @@ const NavBar = () => {
             ref={dropdownRef}
             onClick={handleAvatarClick}
           >
-            <p className="text-white">EN</p>
+            <p className="text-white uppercase">{selectedLanguage}</p>
             <div
               style={{
                 zIndex: 100,
@@ -78,33 +108,41 @@ const NavBar = () => {
               }`}
             >
               <ul>
-                <li
-                  onClick={() => console.log('Profile')}
-                  className="px-4 py-2 text-[26px] bg-darkprimary text-dark hover:bg-white hover:text-darkprimary cursor-pointer"
-                >
-                  English
-                </li>
-                <li
+                {languages.map(({ value, fullForm }, index) => (
+                  <li
+                    key={index}
+                    onClick={() => setSelectedLanguage(value)}
+                    className="px-4 py-2 text-[26px] bg-darkprimary text-dark hover:bg-white hover:text-darkprimary cursor-pointer"
+                  >
+                    {fullForm}
+                  </li>
+                ))}
+                {/* <li
                   onClick={() => console.log('Settings')}
                   className="px-4 py-2 text-[26px] bg-darkprimary text-dark hover:bg-white hover:text-darkprimary cursor-pointer"
                 >
                   Spanish
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
 
           <div className="border-2 rounded-[25px] border-white px-3 w-[250px] my-[30px] h-[50px] flex items-center justify-center">
-            <p className="text-white">Login</p>
+            <p className="text-white">{t('button.login')}</p>
           </div>
           <div className="bg-primary border-2 rounded-[25px] border-primary px-3 w-[250px] h-[50px] flex items-center justify-center">
-            <p className="text-white">Create Account</p>
+            <p className="text-white">{t('button.create-account')}</p>
           </div>
         </div>
       </div>
 
       {/* Hamburger Icon */}
-      <GiHamburgerMenu onClick={handleHamburgerClick} color="#fff" size={40} />
+      <GiHamburgerMenu
+        className="block md:hidden"
+        onClick={handleHamburgerClick}
+        color="#fff"
+        size={40}
+      />
     </div>
   );
 };

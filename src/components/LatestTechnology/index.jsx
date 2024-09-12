@@ -1,7 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const DashboardGrid = () => {
+  const { t } = useTranslation();
   const [activeTabIndex, setactiveTabIndex] = useState(0);
   const items = [
     'NodeJS',
@@ -21,19 +23,19 @@ const DashboardGrid = () => {
     'Rails',
   ];
   const tabs = [
-    { title: 'Frameworks', tabIndex: 0 },
-    { title: 'Frontend Development', tabIndex: 2 },
-    { title: 'Backend Development', tabIndex: 4 },
+    { title: 'latest-technology.items.item-1', tabIndex: 0 },
+    { title: 'latest-technology.items.item-2', tabIndex: 2 },
+    { title: 'latest-technology.items.item-3', tabIndex: 4 },
   ];
 
   return (
     <div className="hidden md:block px-[20px] sm:px-[40px] md:px-[10%] bg-[#EDF7FA] py-[112px]">
       <div className="mb-[80px]">
         <p className="text-[#64748B] text-[18px] font-[400] leading-[24px]">
-          Our Stocks
+          {t('latest-technology.small-title')}
         </p>
         <p className="w-[360px] text-dark text-[36px] font-[700] leading-[41px]">
-          We Use The Latest Technology
+          {t('latest-technology.title')}
         </p>
       </div>
       <div className="flex items-center gap-[56px]">
@@ -64,7 +66,7 @@ const DashboardGrid = () => {
                     activeTabIndex === tabIndex ? 'text-white' : 'text-dark'
                   }`}
                 >
-                  {title}
+                  {t(title)}
                 </label>
               </div>
             ))}

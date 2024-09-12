@@ -1,9 +1,183 @@
 {
+  "button": {
+    "create-an-account": "Create an Account",
+    "create-account": "Create Account",
+    "book-a-call": "Book a call",
+    "see-more-reviews": "See more reviews",
+    "login": "Login",
+    "view-all-services": "View all services",
+    "visit-our-socials": "Visit our socials"
+  },
+  "nav": {
+    "item-1": "Our Services",
+    "item-2": "Contact Us"
+  },
   "hero": {
+    "marquee": {
+      "text-1": "Custom Dashboard",
+      "text-2": "Custom Web App",
+      "text-3": "Dashboards",
+      "text-4": "Infographics Design",
+      "text-5": "Landing Pages",
+      "text-6": "Cross Platform App Development",
+      "text-7": "Mobile App Development",
+      "text-8": "Native Apps"
+    },
     "title": {
       "text1": "Your",
       "text2": "Development",
       "text3": "Team."
+    },
+    "sub-title": {
+      "text1": "In 1 day. For just",
+      "text2": "20€",
+      "text3": "/hr."
+    },
+    "description": {
+      "text1": "Building Mind-Blowing Websites And Apps.",
+      "text2": "400+ customers serviced since 2019."
+    },
+    "list": {
+      "item-1": "White-label development services with rapid turnaround times.",
+      "item-2": "Unmatched quality for app development agencies and companies.",
+      "item-3": "ROI and margins tailored for app development resellers."
+    },
+    "clutch": {
+      "text-1": "We are rated",
+      "text-2": "5",
+      "text-3": "on",
+      "text-4": "based on",
+      "text-5": "29 reviews"
+    },
+    "clutch-mob": {
+      "text-1": "We are rated 5 on",
+      "text-2": "based on 29 review"
     }
+  },
+  "market-place": {
+    "title": "Explore the marketplace.",
+    "services": {
+      "service-1": "Logo design / Brand-book",
+      "service-2": "UX/UI Design",
+      "service-3": "App Development",
+      "service-4": "Staff Augmentation",
+      "service-5": "Maintenance/DevOps",
+      "service-6": "SRS Documentation",
+      "explore": "Explore"
+    },
+    "we-got-solution": {
+      "small-title": "We've got the solution",
+      "title": "In-house vs freelancers? Neither.",
+      "items": {
+        "item-1-title": "White Label Services",
+        "item-1-description": "White-label services crafted for agencies to resell.",
+        "item-2-title": "Exceptional Support",
+        "item-2-description": "A dedicated team available by phone and email",
+        "item-3-title": "Streamlined Management",
+        "item-3-description": "No need to juggle multiple freelancers and vendors",
+        "item-4-title": "Satisfaction Guarantee",
+        "item-4-description": "Full refund on all our services if you’re not satisfied"
+      }
+    }
+  },
+  "efficiency": {
+    "title": "A workspace optimized for outsourcing efficiency",
+    "sub-title": "Invite team members to collaborate, track, and manage orders with you.",
+    "items": {
+      "item-1-title": "Add Your Team",
+      "item-1-description": "Effortlessly include multiple users to place and manage orders.",
+      "item-2-title": "Easy Ordering",
+      "item-2-description": "Place orders with ease, including one-click repeat ordering.",
+      "item-3-title": "White Label",
+      "item-3-description": "All services are white-labeled for seamless reselling.",
+      "item-4-title": "Scalable Pricing",
+      "item-4-description": "Our dependable low prices are specifically designed for resellers."
+    }
+  },
+  "latest-technology": {
+    "small-title": "Our Stocks",
+    "title": "We Use The Latest Technology",
+    "items": {
+      "item-1": "Frameworks",
+      "item-2": "Frontend Development",
+      "item-3": "Backend Development"
+    }
+  },
+  "excelled": {
+    "title": "Industries we have excelled in.",
+    "sub-title": "Leading the way in innovation and excellence across diverse industries.",
+    "items": {
+      "item-1": "Title 1",
+      "item-2": "Title 2",
+      "item-3": "Title 3",
+      "item-4": "Title 4",
+      "item-5": "Title 5"
+    }
+  },
+  "reviews-about-us": {
+    "title": "What clients and agencies say about us",
+    "sub-title": "Check feedback from agencies, in-house marketing teams, and individuals like you have to say!",
+    "first-row": {
+      "item-1-description": "of customers that buy from this merchant give them a 5-star rating",
+      "item-2-title": "Overall Rating",
+      "stars": "Stars"
+    },
+    "second-row": {
+      "item-1": {
+        "title": "Excellent",
+        "sub-title": "Based on 1352 reviews"
+      },
+      "item-2": {
+        "message": "Easy Process. All good. I will be back",
+        "name": "Haji"
+      },
+      "item-3": {
+        "message": "Very easy and clear steps.",
+        "name": "YUBAN TABORDA"
+      },
+      "item-4": {
+        "message": "Easy to use and navigate.",
+        "name": "Chris Walters"
+      },
+      "time": "12 days ago"
+    }
+  },
+  "no-hassle": {
+    "title": "The no hassle way to get job done.",
+    "items": {
+      "text-1": "Founded in",
+      "text-2": "Customers",
+      "text-3": "Services Offered"
+    }
+  },
+  "footer": {
+    "offices": {
+      "title": "Offices",
+      "location-1": "Madrid",
+      "location-2": "Dubai",
+      "location-3": "London",
+      "location-4": "New York"
+    },
+    "services": {
+      "title": "Services",
+      "service-1": "Mobile App Development",
+      "service-2": "Staff Augmentation",
+      "service-3": "iOS Development",
+      "service-4": "UX & UI Design",
+      "service-5": "Android Development",
+      "service-6": "Technical Writer",
+      "service-7": "Web App Development",
+      "service-8": "DevOps",
+      "service-9": "Blockchain",
+      "service-10": "Logo Design",
+      "service-11": "Artificial Intelligence",
+      "service-12": "Brand Book"
+    },
+    "card": {
+      "message": "Use this hashtag to win 5000€ development credits at i labs"
+    },
+    "rights": "2024 I-Labs.app All rights reserved",
+    "terms": "Terms of Service",
+    "privacy-policy": "Privacy Policy"
   }
 }

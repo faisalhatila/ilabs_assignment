@@ -11,18 +11,18 @@ const Hero = () => {
         {
           id: '1-1',
           img: '/assets/images/Marquee1-1.png',
-          title: 'Custom Dashboard',
+          title: 'hero.marquee.text-1',
           style: '',
         },
         {
           id: '1-2',
           img: '/assets/images/Marquee1-2.png',
-          title: 'Custom Web App',
+          title: 'hero.marquee.text-2',
         },
         {
           id: '1-3',
           img: '/assets/images/Marquee1-3.png',
-          title: 'Dashboards',
+          title: 'hero.marquee.text-3',
         },
       ],
     },
@@ -32,17 +32,17 @@ const Hero = () => {
         {
           id: '2-1',
           img: '/assets/images/Marquee2-1.png',
-          title: 'Infographic Design',
+          title: 'hero.marquee.text-4',
         },
         {
           id: '2-2',
           img: '/assets/images/Marquee2-2.png',
-          title: 'Landing Pages',
+          title: 'hero.marquee.text-5',
         },
         {
           id: '2-3',
           img: '/assets/images/Marquee2-3.png',
-          title: 'Cross Platform App Development',
+          title: 'hero.marquee.text-6',
         },
       ],
     },
@@ -52,12 +52,12 @@ const Hero = () => {
         {
           id: '3-1',
           img: '/assets/images/Marquee3-1.png',
-          title: 'Mobile App Development',
+          title: 'hero.marquee.text-7',
         },
         {
           id: '3-2',
           img: '/assets/images/Marquee3-2.png',
-          title: 'Native Apps',
+          title: 'hero.marquee.text-8',
         },
       ],
     },

@@ -1,0 +1,183 @@
+{
+  "button": {
+    "create-an-account": "Crear una cuenta",
+    "create-account": "Crear cuenta",
+    "book-a-call": "Reservar una llamada",
+    "see-more-reviews": "Ver más reseñas",
+    "login": "Iniciar sesión",
+    "view-all-services": "Ver todos los servicios",
+    "visit-our-socials": "Visita nuestras redes sociales"
+  },
+  "nav": {
+    "item-1": "Nuestros Servicios",
+    "item-2": "Contáctanos"
+  },
+  "hero": {
+    "marquee": {
+      "text-1": "Panel personalizado",
+      "text-2": "Aplicación web personalizada",
+      "text-3": "Paneles",
+      "text-4": "Diseño de infografías",
+      "text-5": "Páginas de aterrizaje",
+      "text-6": "Desarrollo de aplicaciones multiplataforma",
+      "text-7": "Desarrollo de aplicaciones móviles",
+      "text-8": "Aplicaciones nativas"
+    },
+    "title": {
+      "text1": "Tu",
+      "text2": "Equipo de",
+      "text3": "Desarrollo."
+    },
+    "sub-title": {
+      "text1": "En 1 día. Por solo",
+      "text2": "20€",
+      "text3": "/hr."
+    },
+    "description": {
+      "text1": "Construyendo sitios web y aplicaciones impresionantes.",
+      "text2": "Más de 400 clientes atendidos desde 2019."
+    },
+    "list": {
+      "item-1": "Servicios de desarrollo de marca blanca con tiempos de respuesta rápidos.",
+      "item-2": "Calidad inigualable para agencias de desarrollo de aplicaciones y empresas.",
+      "item-3": "ROI y márgenes personalizados para revendedores de desarrollo de aplicaciones."
+    },
+    "clutch": {
+      "text-1": "Estamos calificados con",
+      "text-2": "5",
+      "text-3": "en",
+      "text-4": "basado en",
+      "text-5": "29 reseñas"
+    },
+    "clutch-mob": {
+      "text-1": "Estamos calificados con 5 en",
+      "text-2": "basado en 29 reseñas"
+    }
+  },
+  "market-place": {
+    "title": "Explora el mercado.",
+    "services": {
+      "service-1": "Diseño de logotipos / Manual de marca",
+      "service-2": "Diseño UX/UI",
+      "service-3": "Desarrollo de aplicaciones",
+      "service-4": "Aumento de personal",
+      "service-5": "Mantenimiento/DevOps",
+      "service-6": "Documentación SRS",
+      "explore": "Explorar"
+    },
+    "we-got-solution": {
+      "small-title": "Tenemos la solución",
+      "title": "¿Internos o freelancers? Ninguno.",
+      "items": {
+        "item-1-title": "Servicios de marca blanca",
+        "item-1-description": "Servicios de marca blanca diseñados para que las agencias los revendan.",
+        "item-2-title": "Soporte excepcional",
+        "item-2-description": "Un equipo dedicado disponible por teléfono y correo electrónico.",
+        "item-3-title": "Gestión optimizada",
+        "item-3-description": "No necesitas coordinar con varios freelancers y proveedores.",
+        "item-4-title": "Garantía de satisfacción",
+        "item-4-description": "Reembolso completo en todos nuestros servicios si no estás satisfecho."
+      }
+    }
+  },
+  "efficiency": {
+    "title": "Un espacio de trabajo optimizado para la eficiencia del outsourcing",
+    "sub-title": "Invita a miembros del equipo a colaborar, rastrear y gestionar pedidos contigo.",
+    "items": {
+      "item-1-title": "Agrega tu equipo",
+      "item-1-description": "Incluye fácilmente a varios usuarios para realizar y gestionar pedidos.",
+      "item-2-title": "Pedidos fáciles",
+      "item-2-description": "Realiza pedidos con facilidad, incluyendo pedidos repetidos con un clic.",
+      "item-3-title": "Marca blanca",
+      "item-3-description": "Todos los servicios están etiquetados como marca blanca para una reventa sin complicaciones.",
+      "item-4-title": "Precios escalables",
+      "item-4-description": "Nuestros precios bajos confiables están diseñados específicamente para revendedores."
+    }
+  },
+  "latest-technology": {
+    "small-title": "Nuestras acciones",
+    "title": "Usamos la tecnología más avanzada",
+    "items": {
+      "item-1": "Frameworks",
+      "item-2": "Desarrollo Frontend",
+      "item-3": "Desarrollo Backend"
+    }
+  },
+  "excelled": {
+    "title": "Industrias en las que hemos sobresalido.",
+    "sub-title": "Liderando la innovación y la excelencia en diversas industrias.",
+    "items": {
+      "item-1": "Título 1",
+      "item-2": "Título 2",
+      "item-3": "Título 3",
+      "item-4": "Título 4",
+      "item-5": "Título 5"
+    }
+  },
+  "reviews-about-us": {
+    "title": "Lo que dicen los clientes y agencias sobre nosotros",
+    "sub-title": "¡Consulta los comentarios de agencias, equipos de marketing internos y personas como tú!",
+    "first-row": {
+      "item-1-description": "de los clientes que compran a este comerciante le otorgan una calificación de 5 estrellas",
+      "item-2-title": "Calificación general",
+      "stars": "Estrellas"
+    },
+    "second-row": {
+      "item-1": {
+        "title": "Excelente",
+        "sub-title": "Basado en 1352 reseñas"
+      },
+      "item-2": {
+        "message": "Proceso fácil. Todo bien. Volveré",
+        "name": "Haji"
+      },
+      "item-3": {
+        "message": "Pasos muy claros y fáciles.",
+        "name": "YUBAN TABORDA"
+      },
+      "item-4": {
+        "message": "Fácil de usar y navegar.",
+        "name": "Chris Walters"
+      },
+      "time": "Hace 12 días"
+    }
+  },
+  "no-hassle": {
+    "title": "La manera sin complicaciones de hacer el trabajo.",
+    "items": {
+      "text-1": "Fundado en",
+      "text-2": "Clientes",
+      "text-3": "Servicios ofrecidos"
+    }
+  },
+  "footer": {
+    "offices": {
+      "title": "Oficinas",
+      "location-1": "Madrid",
+      "location-2": "Dubái",
+      "location-3": "Londres",
+      "location-4": "Nueva York"
+    },
+    "services": {
+      "title": "Servicios",
+      "service-1": "Desarrollo de aplicaciones móviles",
+      "service-2": "Aumento de personal",
+      "service-3": "Desarrollo de iOS",
+      "service-4": "Diseño UX & UI",
+      "service-5": "Desarrollo de Android",
+      "service-6": "Redactor técnico",
+      "service-7": "Desarrollo de aplicaciones web",
+      "service-8": "DevOps",
+      "service-9": "Blockchain",
+      "service-10": "Diseño de logotipos",
+      "service-11": "Inteligencia Artificial",
+      "service-12": "Manual de marca"
+    },
+    "card": {
+      "message": "Usa este hashtag para ganar 5000€ en créditos de desarrollo en i labs"
+    },
+    "rights": "2024 I-Labs.app Todos los derechos reservados",
+    "terms": "Términos del servicio",
+    "privacy-policy": "Política de privacidad"
+  }
+}

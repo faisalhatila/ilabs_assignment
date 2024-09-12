@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Maqruee = ({ list = [] }) => {
+  const { t } = useTranslation();
   const [isPaused, setIsPaused] = useState(false);
 
   const handleMouseEnter = () => {
@@ -21,7 +23,9 @@ const Maqruee = ({ list = [] }) => {
         >
           <img className="mb-2 rounded" src={img} />
         </div>
-        <p className="text-white absolute bottom-[10px] left-[10px]">{title}</p>
+        <p className="text-white absolute bottom-[10px] left-[10px]">
+          {t(title)}
+        </p>
       </div>
     ));
   };

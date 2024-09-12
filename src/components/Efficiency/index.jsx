@@ -1,35 +1,34 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Efficiency = () => {
+  const { t } = useTranslation();
   const efficiencyData = [
     {
-      title: 'Add Your Team',
-      description:
-        'Effortlessly include multiple users to place and manage orders.',
+      title: 'efficiency.items.item-1-title',
+      description: 'efficiency.items.item-1-description',
     },
     {
-      title: 'Easy Ordering',
-      description:
-        'Place orders with ease, including one-click repeat ordering.',
+      title: 'efficiency.items.item-2-title',
+      description: 'efficiency.items.item-2-description',
     },
     {
-      title: 'White Label',
-      description: 'All services are white-labeled for seamless reselling.',
+      title: 'efficiency.items.item-3-title',
+      description: 'efficiency.items.item-3-description',
     },
     {
-      title: 'Scalable Pricing',
-      description:
-        'Our dependable low prices are specifically designed for resellers.',
+      title: 'efficiency.items.item-4-title',
+      description: 'efficiency.items.item-4-description',
     },
   ];
   return (
     <div className="px-[20px] py-[112px] sm:px-[40px] md:px-[10%] bg-dark">
       <div>
         <p className="text-center text-white text-[38px] font-[600] leading-[45px]">
-          A workspace optimized for outsourcing efficiency
+          {t('efficiency.title')}
         </p>
         <p className="text-center text-white text-[18px] font-[400] leading-[24px]">
-          Invite team members to collaborate, track, and manage orders with you.
+          {t('efficiency.sub-title')}
         </p>
       </div>
       <div className="flex flex-col md:flex-row gap-[0px] md:gap-[112px] items-center">
@@ -44,10 +43,10 @@ const Efficiency = () => {
                   <img src="/assets/icons/Check.svg" />
                 </div>
                 <p className="text-white text-[22px] font-[600] leading-[120%] my-[20px]">
-                  {title}
+                  {t(title)}
                 </p>
                 <p className="max-w-[287px] text-[#64748B] text-[16px] font-[400] leading-normal">
-                  {description}
+                  {t(description)}
                 </p>
               </div>
             ))}
@@ -56,7 +55,7 @@ const Efficiency = () => {
       </div>
       <div className="flex items-center justify-center mt-[50px] md:mt-[0px]">
         <button className="boder-2 border-primary bg-primary text-white flex justify-center items-center py-[20px] px-[40px] rounded-[40px]">
-          Create An Account
+          {t('button.create-an-account')}
         </button>
       </div>
     </div>
