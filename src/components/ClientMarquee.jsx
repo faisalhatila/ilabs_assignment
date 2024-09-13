@@ -1,7 +1,18 @@
 import { useState } from 'react';
 import Marquee from 'react-fast-marquee';
 
-const ClientMarquee = ({ logos }) => {
+const ClientMarquee = () => {
+  const logos = [
+    '/assets/images/clients-logos/Client1.png',
+    '/assets/images/clients-logos/Client2.png',
+    '/assets/images/clients-logos/Client3.png',
+    '/assets/images/clients-logos/Client4.png',
+    '/assets/images/clients-logos/Client5.png',
+    '/assets/images/clients-logos/Client6.png',
+    '/assets/images/clients-logos/Client7.png',
+    '/assets/images/clients-logos/Client8.png',
+    '/assets/images/clients-logos/Client9.png',
+  ];
   const [isPaused, setIsPaused] = useState(false);
 
   const handleMouseEnter = () => {
